@@ -47,11 +47,13 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.3",
     "null-loader": "^0.1.1",
+    "pre-push": "^0.1.1",
     "protractor": "^5.1.1",
     "ts-loader": "^2.0.3",
     "ts-node": "^3.0.2",
     "typescript": "2.3.3"
   },
   "version": "0.0.1",
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "pre-push": ["test-ci"]
 }
