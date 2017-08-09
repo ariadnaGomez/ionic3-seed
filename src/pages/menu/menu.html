@@ -1,0 +1,12 @@
+<ion-menu [content]="content" side="right" persistent="true" type="overlay">
+  <ion-content>
+   <div padding>
+     <ion-list>
+       <button menuClose ion-item *ngFor="let page of pages" (click)="goToDetail(page)">
+         <ion-icon name="{{page.icon}}"></ion-icon> {{page.title}}
+       </button>
+     </ion-list>
+   </div>
+ </ion-content>
+ </ion-menu>
+ <ion-nav name="main" [root]="menuRoot" #content persistent="false" main></ion-nav>

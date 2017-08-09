@@ -1,8 +1,28 @@
 {
+  "extends": ["tslint-ionic-rules", "tslint:recommended"],
   "rules": {
     "no-duplicate-variable": true,
+    "trailing-comma": false,
     "no-unused-variable": [
       true
+    ],
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "indent": [true, "spaces", 4],
+    "max-line-length": [true, 80],
+    "one-variable-per-declaration": false,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
     ]
   },
   "rulesDirectory": [
