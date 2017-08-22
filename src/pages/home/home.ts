@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams, IonicPage } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage({
   name: 'home',
@@ -11,7 +11,7 @@ import { NavController, NavParams, IonicPage } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  param = {value: 'world'};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }

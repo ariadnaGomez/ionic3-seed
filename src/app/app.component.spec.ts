@@ -2,6 +2,7 @@ import { async, TestBed } from '@angular/core/testing';
 import { Keyboard } from '@ionic-native/keyboard';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { TranslateModule } from '@ngx-translate/core';
 import { IonicModule, Platform } from 'ionic-angular';
 import {} from 'jasmine';
 
@@ -11,7 +12,7 @@ import {
   KeyboardMock,
   PlatformMock,
   SplashScreenMock,
-  StatusBarMock
+  StatusBarMock,
 } from 'ionic3-mocks';
 
 describe('MyApp Component', () => {
@@ -22,7 +23,8 @@ describe('MyApp Component', () => {
     TestBed.configureTestingModule({
       declarations: [MyApp],
       imports: [
-        IonicModule.forRoot(MyApp)
+        IonicModule.forRoot(MyApp),
+        TranslateModule.forRoot(),
       ],
       providers: [
         {
