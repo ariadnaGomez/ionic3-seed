@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, Menu, NavController, Nav } from 'ionic-angular';
+import { IonicPage, Menu, Nav, NavController } from 'ionic-angular';
 
 @IonicPage({
     name: 'menu',

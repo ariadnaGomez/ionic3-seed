@@ -8,9 +8,10 @@
     ],
     "member-access": false,
     "object-literal-sort-keys": false,
-    "indent": [true, "spaces", 4],
+    "indent": [true, "spaces", 2],
     "max-line-length": [true, 80],
     "one-variable-per-declaration": false,
+    "quotemark": [true, "single"],
     "member-ordering": [
       true,
       {

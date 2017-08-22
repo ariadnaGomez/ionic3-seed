@@ -1,26 +1,24 @@
 import { async, TestBed } from '@angular/core/testing';
-import { IonicModule, Platform } from 'ionic-angular';
-
-import {} from 'jasmine';
-import { StatusBar } from '@ionic-native/status-bar';
 import { Keyboard } from '@ionic-native/keyboard';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+import { IonicModule, Platform } from 'ionic-angular';
+import {} from 'jasmine';
 
 import { MyApp } from './app.component';
 
 import {
+  KeyboardMock,
   PlatformMock,
-  StatusBarMock,
   SplashScreenMock,
-  KeyboardMock
+  StatusBarMock
 } from 'ionic3-mocks';
 
-fdescribe('MyApp Component', () => {
+describe('MyApp Component', () => {
   let fixture;
   let component;
 
   beforeEach(async(() => {
-
     TestBed.configureTestingModule({
       declarations: [MyApp],
       imports: [
@@ -40,7 +38,7 @@ fdescribe('MyApp Component', () => {
           provide: Keyboard,
           useFactory: () => KeyboardMock.instance()}
       ]
-    })
+    });
   }));
 
   beforeEach(() => {

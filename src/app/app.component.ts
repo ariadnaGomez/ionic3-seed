@@ -1,7 +1,7 @@
-import { Platform } from 'ionic-angular';
 import { Component } from '@angular/core';
-import { StatusBar } from '@ionic-native/status-bar';
 import { Keyboard } from '@ionic-native/keyboard';
+import { StatusBar } from '@ionic-native/status-bar';
+import { Platform } from 'ionic-angular';
 
 @Component({
   templateUrl: 'app.html'
