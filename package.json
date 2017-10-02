@@ -46,7 +46,7 @@
     "core-js": "^2.5.0",
     "html-loader": "^0.4.5",
     "ionic": "3.7.0",
-    "ionic3-mocks": "^0.11.5",
+    "ionic3-mocks": "^0.11.6",
     "jasmine": "^2.5.3",
     "jasmine-spec-reporter": "^4.2.0",
     "karma": "^1.5.0",
